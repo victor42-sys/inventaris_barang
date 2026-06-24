@@ -1,16 +1,17 @@
 ## Nama Mahasiswa
 
 Muti'ah Mawaddah
----
+
 
 ## Judul Project 
 
 Inventaris Barang Berbasis Web
----
+
 
 ## Deskripsi Singkat Project
 
 Sistem Informasi Inventaris Barang Berbasis Web merupakan aplikasi yang digunakan untuk mengelola data inventaris secara terstruktur, efisien, dan mudah diakses. Sistem ini membantu admin dalam melakukan pengelolaan data barang dan kategori barang melalui fitur CRUD (Create, Read, Update, Delete), sehingga proses pendataan inventaris menjadi lebih efektif dan terorganisir.
+
 ---
 
 ## Penjelasan Singkat Database
