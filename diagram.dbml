@@ -1,0 +1,28 @@
+Project sistem_inventaris_barang {
+  database_type: "PostgreSQL"
+}
+
+Table users {
+  id integer [pk, increment]
+  nama varchar
+  email varchar [unique]
+  password varchar
+}
+
+Table categories {
+  id integer [pk, increment]
+  category_name varchar
+  description text
+}
+
+Table items {
+  id integer [pk, increment]
+  item_code varchar
+  item_name varchar
+  stock integer
+  condition varchar
+  location varchar
+  entry_date date
+  category_id integer
+  users_id integer
+}
