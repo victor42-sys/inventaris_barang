@@ -23,6 +23,6 @@ Table items {
   condition varchar
   location varchar
   entry_date date
-  category_id integer
-  users_id integer
+  category_id integer [ref: > categories.id]
+  users_id integer [ref: > users.id]
 }
