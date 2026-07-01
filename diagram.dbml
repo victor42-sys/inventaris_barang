@@ -13,6 +13,7 @@ Table categories {
   id integer [pk, increment]
   category_name varchar
   description text
+  user_id integer [ref: > users.id] 
 }
 
 Table items {
@@ -24,13 +25,14 @@ Table items {
   location varchar
   entry_date date
   category_id integer [ref: > categories.id]
+  user_id integer [ref: > users.id]
 }
 
 Table transactions {
   id integer [pk, increment]
   item_id integer [ref: > items.id]
-  user_id integer [ref: > users.id]
-  transaction_type varchar
+  user_id integer [ref: > users.id] 
+  transaction_type varchar 
   quantity integer
   transaction_date date
   description text
