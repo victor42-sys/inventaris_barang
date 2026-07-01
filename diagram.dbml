@@ -26,3 +26,13 @@ Table items {
   category_id integer [ref: > categories.id]
   users_id integer [ref: > users.id]
 }
+
+Tabel transactions {
+  id integer [pk, increment]
+  item_id integer
+  user_id integer
+  transaction_type varchar 
+  quantity integer
+  transaction_date date
+  description text
+}
