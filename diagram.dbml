@@ -17,14 +17,13 @@ Table categories {
 
 Table items {
   id integer [pk, increment]
-  item_code varchar
+  item_code varchar [unique]
   item_name varchar
   stock integer
   item_condition varchar
   location varchar
   entry_date date
   category_id integer [ref: > categories.id]
-  user_id integer [ref: > users.id]
 }
 
 Table transactions {
