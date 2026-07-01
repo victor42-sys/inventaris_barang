@@ -20,18 +20,18 @@ Table items {
   item_code varchar
   item_name varchar
   stock integer
-  condition varchar
+  item_condition varchar
   location varchar
   entry_date date
   category_id integer [ref: > categories.id]
-  users_id integer [ref: > users.id]
+  user_id integer [ref: > users.id]
 }
 
-Tabel transactions {
+Table transactions {
   id integer [pk, increment]
-  item_id integer
-  user_id integer
-  transaction_type varchar 
+  item_id integer [ref: > items.id]
+  user_id integer [ref: > users.id]
+  transaction_type varchar
   quantity integer
   transaction_date date
   description text
