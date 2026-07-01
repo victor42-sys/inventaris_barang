@@ -36,4 +36,8 @@ Table transactions {
   quantity integer
   transaction_date date
   description text
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3fe0a84b8b66ab90562481ce0cfd4b1571e6ebf1
